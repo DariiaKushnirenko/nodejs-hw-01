@@ -1,5 +1,5 @@
 import { PATH_DB } from '../constants/contacts.js';
-import fs from 'node:fs';
+import fs from "node:fs/promises";
 
 export const readContacts = async () => {
     try {
@@ -9,8 +9,5 @@ export const readContacts = async () => {
         
     } catch (error) {
         console.error('Error reading file:', error);
-        
     }
-     
-    
 };

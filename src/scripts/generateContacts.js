@@ -1,19 +1,6 @@
 import createFakeContact from '../utils/createFakeContact.js';
 import { readFile, writeFile } from 'fs/promises';
 import { PATH_DB } from '../constants/contacts.js';
-// const generateContacts = async (number) => {
-//     try {
-//         const files = await fs.readdir(createFakeContact(number));
-//         console.log('List of contacts:', files);
-//         await fs.appendFile(PATH_DB, files, 'utf-8');
-//         await fs.writeFile(PATH_DB, files, 'utf8');
-//     }
-//     catch (error) {
-//         ('Operation failed, try again:',error);
-//     }
-// };
-// generateContacts(5);
-
 
 const generateContacts = async (number) => {
     try {
